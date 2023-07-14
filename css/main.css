@@ -1,0 +1,14 @@
+body
+{
+	background-color: black;
+}
+
+div.title
+{
+	text-align: center;
+}
+
+div.title img
+{
+	height: 150px;
+}
