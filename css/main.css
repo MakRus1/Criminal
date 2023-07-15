@@ -31,11 +31,13 @@ p
 	line-height: 45px;
 }
 
+
+
 /* Intro */
 .intro
 {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
 .logo
@@ -50,18 +52,36 @@ p
 	opacity: .6;
 }
 
+.note
+{
+	width: 13%;
+	position: absolute;
+	margin-left: 10px;
+}
+
+.note__text
+{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	margin: 50px auto;
+}
+
 .board
 {
 	width: 100%;
-	height: 100%;
+	height: auto;
 }
+
+
 
 /* Description */
 .description
 {
 	width: 100%;
-	height: 100%;
-	margin-bottom: 100px;
+	height: auto;
+	margin-bottom: 300px;
 }
 
 .title
@@ -74,19 +94,245 @@ p
 .letter
 {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	position: absolute;
 }
 
 .letter__text
 {
 	font-family: 'Caveat', cursive;
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: 200;
 
 	width: 100%;
-	max-width: 1000px;
+	max-width: 800px;
 	margin: 0 auto;
 	position: relative;
 	padding-top: 80px;
+}
+
+
+
+/* Authors */
+.authors:before
+{
+	content: "";
+	display: block;
+	margin: 0 auto 20px;
+	width: 50%;
+	height: 3px;
+	background-color: white;
+}
+
+.authors
+{
+	color: white;
+	margin: 0 auto;
+}
+
+
+
+@media(max-width: 1200px)
+{
+	p
+	{
+		line-height: 35px;
+	}
+
+
+
+	/* Intro */
+	.note
+	{
+		margin-left: -45px;
+	}
+
+	.note__text
+	{
+		margin-top: 30px;
+		font-size: 14px;
+	}
+
+
+
+	/* Description */
+	.description
+	{
+		margin-bottom: 150px;
+	}
+
+	.title
+	{
+		font-size: 40px;
+	}
+
+	.letter__text
+	{
+		max-width: 650px;
+		font-size: 24px;	
+	}
+
+
+
+	/* Authors */
+	.authors
+	{
+		font-size: 12px;
+	}
+}
+
+@media(max-width: 990px)
+{
+	p
+	{
+		line-height: 25px;
+	}
+
+
+
+	/* Intro */
+	.logo
+	{
+		margin-bottom: 30px;
+	}
+
+	.note
+	{
+		margin-left: -45px;
+	}
+
+	.note__text
+	{
+		margin-top: 30px;
+		font-size: 14px;
+	}
+
+
+
+	/* Description */
+	.letter__text
+	{
+		padding-top: 40px;
+		max-width: 450px;
+    	font-size: 20px;	
+	}
+
+
+
+	/* Authors */
+	.authors
+	{
+		font-size: 10px;
+	}
+}
+
+@media(max-width: 770px)
+{
+	p
+	{
+		line-height: 15px;
+	}
+
+
+	
+	/* Intro */
+	.logo
+	{
+		margin-bottom: 20px;
+	}
+
+	.note
+	{
+		margin-left: -30px;
+	}
+
+	.note__text
+	{
+		margin-top: 20px;
+		font-size: 8px;
+	}
+	
+
+
+	/* Description */
+	.description
+	{
+		margin-bottom: 120px;
+	}
+
+	.title
+	{
+		font-size: 30px;
+	}
+
+	.letter__text
+	{
+		padding-top: 15px;
+		max-width: 250px;
+    	font-size: 12px;	
+	}
+
+
+
+	/* Authors */
+	.authors
+	{
+		font-size: 8px;
+	}
+}
+
+
+@media(max-width: 575px)
+{
+	p
+	{
+		line-height: 9px;
+	}
+	
+
+
+	/* Intro */
+	.logo
+	{
+		margin-bottom: 20px;
+	}
+
+	.note
+	{
+		margin-left: -15px;
+	}
+
+	.note__text
+	{
+		margin-top: 10px;
+		font-size: 4px;
+	}
+	
+
+
+	/* Description */
+	.description
+	{
+		margin-bottom: 50px;
+	}
+
+	.title
+	{
+		font-size: 20px;
+	}
+
+	.letter__text
+	{
+		padding-top: 5px;
+		max-width: 150px;
+    	font-size: 8px;	
+	}
+
+
+
+	/* Authors */
+	.authors
+	{
+		font-size: 6px;
+	}
 }
