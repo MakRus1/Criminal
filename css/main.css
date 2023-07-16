@@ -48,8 +48,12 @@ p
 
 .board__wrapper
 {
-	background-color: #000;
 	opacity: .6;
+	overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .note__wrapper
@@ -71,6 +75,16 @@ p
 	height: auto;
 }
 
+.light 
+{
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
+	position: absolute;
+	display: block;
+	opacity: .5;
+}
+
 
 
 /* Description */
@@ -86,12 +100,22 @@ p
 	font-weight: 400;
 	font-size: 42px;
 	color: white;
+	margin-bottom: 200px;
 }
 
-.letter
+.letter 
+{
+	overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;	
+}
+
+.letter__img
 {
 	width: 100%;
 	height: auto;
+	max-width: 1920px;
 	position: absolute;
 }
 
@@ -105,7 +129,7 @@ p
 	max-width: 800px;
 	margin: 0 auto;
 	position: relative;
-	padding-top: 80px;
+/*	padding-top: 80px;*/
 }
 
 
@@ -187,9 +211,13 @@ p
 
 
 	/* Description */
+	.title
+	{
+		margin-bottom: 150px;
+	}
+
 	.letter__text
 	{
-		padding-top: 40px;
 		max-width: 450px;
     	font-size: 20px;	
 	}
@@ -229,11 +257,11 @@ p
 	.title
 	{
 		font-size: 30px;
+		margin-bottom: 100px;
 	}
 
 	.letter__text
 	{
-		padding-top: 25px;
 		max-width: 350px;
     	font-size: 18px;	
 	}
@@ -280,11 +308,11 @@ p
 	.title
 	{
 		font-size: 20px;
+		margin-bottom: 90px;
 	}
 
 	.letter__text
 	{
-		padding-top: 10px;
 		max-width: 200px;
     	font-size: 10px;	
 	}
