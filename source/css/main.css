@@ -68,8 +68,9 @@ img
 
 .note
 {
-	width: 150px;
+	width: 100%;
 	height: auto;
+	max-width: 150px;
 	position: absolute;
 	z-index: 3;
 }
@@ -78,6 +79,31 @@ img
 {
 	width: 100%;
 	height: auto;
+	max-width: 1200px;
+}
+
+.picture
+{
+	width: 100%;
+	height: auto;
+	max-width: 200px;
+	position: absolute;
+	z-index: 1;
+}
+
+.cases
+{
+	transform: translate3d(-160%, -75%, 0);
+}
+
+.gallery
+{
+	transform: translate3d(140%, -110%, 0);	
+}
+
+.channels
+{
+	transform: translate3d(0, 50%, 0);	
 }
 
 .strings
@@ -106,7 +132,7 @@ img
 {
 	width: 100%;
 	height: auto;
-	margin-bottom: 300px;
+	margin-bottom: 15vw;
 }
 
 .title
@@ -114,7 +140,7 @@ img
 	font-weight: 400;
 	font-size: 42px;
 	color: white;
-	margin-bottom: 200px;
+	margin-bottom: 12vw;
 }
 
 .letter 
@@ -129,7 +155,7 @@ img
 {
 	width: 100%;
 	height: auto;
-	max-width: 1920px;
+	max-width: 1600px;
 	position: absolute;
 }
 
@@ -153,9 +179,9 @@ img
 {
 	content: "";
 	display: block;
-	margin: 0 auto 20px;
+	margin: 0 auto 1vw;
 	width: 50%;
-	height: 3px;
+	height: 0.2vw;
 	background-color: white;
 }
 
@@ -171,42 +197,7 @@ img
 {
 	p
 	{
-		line-height: 35px;
-	}
-
-
-
-	/* Description */
-	.description
-	{
-		margin-bottom: 150px;
-	}
-
-	.title
-	{
-		font-size: 40px;
-	}
-
-	.letter__text
-	{
-		max-width: 650px;
-		font-size: 24px;	
-	}
-
-
-
-	/* Authors */
-	.authors
-	{
-		font-size: 12px;
-	}
-}
-
-@media(max-width: 990px)
-{
-	p
-	{
-		line-height: 25px;
+		line-height: 3vw;
 	}
 
 
@@ -214,12 +205,33 @@ img
 	/* Intro */
 	.logo
 	{
-		margin-bottom: 30px;
+		margin-top: 2vw;
+		margin-bottom: 2vw;
 	}
 
-	.note
+	.note 
 	{
-		width: 100px;
+		max-width: 13vw;
+	}
+
+	.picture
+	{
+		max-width: 15vw;
+	}
+
+	.cases
+	{
+		transform: translate3d(-27vw, -85%, 0);
+	}
+
+	.gallery
+	{
+		transform: translate3d(23vw, -120%, 0);	
+	}
+
+	.channels
+	{
+		transform: translate3d(0, 50%, 0);	
 	}
 
 
@@ -227,13 +239,14 @@ img
 	/* Description */
 	.title
 	{
-		margin-bottom: 150px;
+		font-size: 3vw;
+		margin-bottom: 10vw;
 	}
 
 	.letter__text
 	{
-		max-width: 450px;
-    	font-size: 20px;	
+		max-width: 50vw;
+		font-size: 2vw;	
 	}
 
 
@@ -241,101 +254,6 @@ img
 	/* Authors */
 	.authors
 	{
-		font-size: 10px;
-	}
-}
-
-@media(max-width: 770px)
-{
-	p
-	{
-		line-height: 15px;
-	}
-
-
-	
-	/* Intro */
-	.logo
-	{
-		margin-bottom: 20px;
-	}
-	
-
-
-	/* Description */
-	.description
-	{
-		margin-bottom: 120px;
-	}
-
-	.title
-	{
-		font-size: 30px;
-		margin-bottom: 100px;
-	}
-
-	.letter__text
-	{
-		max-width: 350px;
-    	font-size: 18px;	
-	}
-
-
-
-	/* Authors */
-	.authors
-	{
-		font-size: 8px;
-	}
-}
-
-
-@media(max-width: 575px)
-{
-	p
-	{
-		line-height: 9px;
-	}
-	
-
-
-	/* Intro */
-	.logo
-	{
-		margin-bottom: 20px;
-	}
-
-	.note
-	{
-		width: 50px;
-		margin-top: 2px;
-	}
-	
-
-
-	/* Description */
-	.description
-	{
-		margin-bottom: 50px;
-	}
-
-	.title
-	{
-		font-size: 20px;
-		margin-bottom: 90px;
-	}
-
-	.letter__text
-	{
-		max-width: 200px;
-    	font-size: 10px;	
-	}
-
-
-
-	/* Authors */
-	.authors
-	{
-		font-size: 6px;
+		font-size: 1vw;
 	}
 }
