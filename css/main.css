@@ -31,6 +31,11 @@ p
 	line-height: 45px;
 }
 
+img
+{
+	pointer-events: none;
+}
+
 
 
 /* Intro */
@@ -66,13 +71,22 @@ p
 	width: 150px;
 	height: auto;
 	position: absolute;
-	margin-top: 10px;
+	z-index: 3;
 }
 
 .board
 {
 	width: 100%;
 	height: auto;
+}
+
+.strings
+{
+	width: 100%;
+	height: auto;
+	max-width: 1200px;
+	position: absolute;
+	z-index: 2;
 }
 
 .light 
