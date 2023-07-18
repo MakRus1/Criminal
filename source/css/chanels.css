@@ -1,0 +1,52 @@
+body
+{
+	margin: 0;
+	background-color: black;
+	font-family: 'Spectral SC', serif;
+	font-size: 14px;
+	line-height: 1.6;
+	color: black;
+}
+
+*,
+*:before,
+*:after
+{
+	box-sizing: border-box;
+}
+
+.container
+{
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+p
+{
+	text-indent: 25px;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 45px;
+}
+
+img
+{
+	pointer-events: none;
+}
+
+
+
+/* Intro */
+.intro
+{
+	width: 100%;
+	height: auto;
+}
+
+.logo
+{
+	width: 45%;
+	margin: 40px auto;
+}
