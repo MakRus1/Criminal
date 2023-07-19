@@ -18,6 +18,7 @@ body
 .container
 {
 	width: 100%;
+	height: auto;
 	max-width: 1300px;
 	margin: 0 auto;
 	text-align: center;
@@ -36,6 +37,17 @@ img
 	pointer-events: none;
 }
 
+a
+{
+	text-decoration: none;
+	color: black;
+	transition: color ease .3s;
+}
+
+a:hover
+{
+	color: #c43324;
+}
 
 
 /* Intro */
@@ -43,11 +55,186 @@ img
 {
 	width: 100%;
 	height: auto;
+	margin-bottom: 60px;
 }
 
 .logo
 {
 	width: 45%;
-	margin: 40px auto;
+	margin: 40px auto 0;
 	display: block;
+}
+
+.logo img
+{
+	max-width: 100%;
+}
+
+.header
+{
+	position: relative;
+	width: 100%;
+}
+
+.header__main_pic
+{
+	width: 60%;
+	z-index: 2;
+}
+
+.header__paper_pic
+{
+	width: 40%;
+	position: absolute;
+	right: 0;
+	z-index: -1;
+}
+
+.header__police_pic
+{
+	width: 25%;
+	position: absolute;
+	left: 10%;
+	bottom: -5%;
+	transform: rotate(-20deg);
+}
+
+.header h2
+{
+	position: absolute;
+	font-weight: 500;
+	font-size: 35px;
+	max-width: 300px;
+	top: 7%;
+	left: 58%;
+}
+
+.header h1
+{
+	position: absolute;
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 40px;
+	max-width: 300px;
+	top: 35%;
+	left: 40%;
+	
+}
+
+/* Chanels */
+.chanel__item
+{
+	position: relative;
+	width: 100%;
+}
+
+.chanel__item__note
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	transform: rotate(15deg);
+	z-index: -2;
+}
+
+.chanel__item__title
+{
+	position: absolute;
+	width: 50%;
+	left: 25%;
+	z-index: -1;
+}
+
+.chanel__item h1
+{
+	position: absolute;
+	margin-top: 10%;
+	left: 43%;
+	font-size: 40px;
+}
+
+.chanel__item__photo
+{
+	position: absolute;
+	left: 0;
+	margin-top: 17%;
+	width: 50%;
+}
+
+.chanel__item__picture
+{
+	position: absolute;
+	left: 14.5%;
+	margin-top: 21.5%;
+	width: 50%;
+	max-width: 250px;
+}
+
+.chanel__item__letter
+{
+	position: absolute;
+	right: 0;
+	margin-top: 17%;
+	width: 50%;	
+}
+
+.chanel__item p
+{
+	position: absolute;
+	max-width: 500px;
+	margin-top: 20%;
+	left: 52%;
+	font-size: 25px;
+	line-height: 30px;
+	text-align: left;
+}
+
+
+
+@media(max-width: 1200px)
+{
+	.intro
+	{
+		margin-bottom: 7%;
+	}
+
+	.logo
+	{
+		margin-top: 2vw;
+	}
+
+	.header h2
+	{
+		font-size: 3vw;
+		max-width: 10vw;
+		top: 1.5vw;
+	}
+
+	.header h1
+	{
+		font-size: 3vw;
+		line-height: 3vw;
+		max-width: 30vw;
+		left: 37vw;
+	}
+
+	/* Chanels */
+	.chanel__item h1
+	{
+		left: 43vw;
+		font-size: 3vw;
+	}
+
+	.chanel__item__picture
+	{
+		max-width: 19vw;
+	}
+
+	.chanel__item p
+	{
+		max-width: 42vw;
+		font-size: 2vw;
+		line-height: 2.7vw;
+	}
 }

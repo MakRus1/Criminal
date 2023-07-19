@@ -91,8 +91,14 @@ img
 	z-index: 1;
 }
 
+.cases:hover
+{
+	transform: translate3d(-170%, -75%, 0px);
+}
+
 .cases
 {
+	transition: transform linear .2s;
 	display: block;
 	width: 200px;
 	height: 240px;
@@ -100,8 +106,14 @@ img
 	transform: translate3d(-165%, -70%, 0px);
 }
 
+.gallery:hover
+{
+	transform: translate3d(135%, -105%, 0px);
+}
+
 .gallery
 {
+	transition: transform linear .2s;
 	display: block;
 	width: 200px;
 	height: 240px;
@@ -109,8 +121,14 @@ img
 	transform: translate3d(140%, -100%, 0px);
 }
 
+.channels:hover
+{
+	transform: translate3d(0, 45%, 0px);
+}
+
 .channels
 {
+	transition: transform linear .2s;
 	display: block;
 	width: 200px;
 	height: 240px;
