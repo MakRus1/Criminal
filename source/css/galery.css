@@ -32,6 +32,120 @@ img
 	pointer-events: none;
 }
 
+
+
+/* Nav */
+.nav
+{
+	display: none;
+	flex-direction: column;
+	position: fixed;
+	height: 100%;
+	width: 25%;
+	top: 0; bottom: 0; left: 0; right: 0;
+	z-index: 100;
+	padding: 50px 40px;
+	background-color: #1a1a1a;
+	color: white;
+	opacity: 0.8;
+
+	animation: burgerAnimation 0.4s ease;
+}
+
+.nav ul
+{
+	list-style: none;
+	flex-direction: column;
+	row-gap: 30px;
+	font-size: 40px;
+	opacity: 1;
+}
+
+a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+.nav ul li
+{
+	transition: all 0.5s ease;
+}
+
+.nav ul li:hover
+{
+	transform: translateY(-10px);
+}
+
+.current
+{
+	color: #720000;
+}
+
+.open
+{
+	display: flex !important;
+}
+
+.burger
+{
+	display: flex;
+	z-index: 100;
+	position: fixed;
+	align-items: center;
+	width: 40px;
+	height: 30px;
+	top: 30px;
+	left: 30px;
+}
+
+.burger span
+{
+	height: 5px;
+	width: 100%;
+	transform: scale(1);
+	background-color: white;
+}
+
+.burger:before, .burger:after
+{
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	background-color: white;
+	transition: all 0.3s ease;
+}
+
+.burger:before
+{
+	top: 0;
+}
+
+.burger:after
+{
+	bottom: 0;
+}
+
+.burger.active span
+{
+	transform: scale(0);
+}
+
+.burger.active:before
+{
+	top: 50%;
+	transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active:after
+{
+	bottom: 50%;
+	transform: rotate(45deg) translate(0, 50%);
+}
+
+
+
 .logo
 {
 	width: 35%;

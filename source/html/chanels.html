@@ -11,6 +11,18 @@
 	<title>Рекомендованные каналы</title>
 </head>
 <body>
+	<div class="nav">
+		<ul>
+			<a href="../../index.html"><li>Главная</li></a>
+			<a href="#"><li class="current">Каналы</li></a>
+			<a href="galery.html"><li>Галерея</li></a>
+			<a href="search.html"><li>Дела</li></a>
+		</ul>
+	</div>
+	<div class="burger">
+		<span></span>
+	</div>
+
 	<div class="intro">
 		<div class="container">
 			<a href="../../index.html" class="logo"><img src="../../resources/png/Title.png"></a>
@@ -36,5 +48,13 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		document.querySelector('.burger').addEventListener('click', function()
+		{
+			this.classList.toggle('active');
+			document.querySelector('.nav').classList.toggle('open');
+		})
+	</script>
 </body>
 </html>

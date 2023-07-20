@@ -11,6 +11,17 @@
 	<title>Криминальное чтиво</title>
 </head>
 <body>
+	<div class="nav">
+		<ul>
+			<a href="#"><li class="current">Главная</li></a>
+			<a href="source/html/chanels.html"><li>Каналы</li></a>
+			<a href="source/html/galery.html"><li>Галерея</li></a>
+			<a href="source/html/search.html"><li>Дела</li></a>
+		</ul>
+	</div>
+	<div class="burger">
+		<span></span>
+	</div>
 	<div class="intro">
 		<div class="container">
 			<img src="resources/png/Title.png" class="logo">
@@ -34,8 +45,10 @@
 		<div class="container">
 			<h1 class="title">Почему люди читают тру <span style="color: #c43324; font-weight: 500;">крайм</span>?</h1>
 		</div>
-		<div class="letter">	
-			<img src="resources/png/MainPage/Letter.png" class="letter__img">
+		<div class="letter">
+			<img src="resources/png/MainPage/LetterLeft.png" class="letter__left__img">	
+			<img src="resources/png/MainPage/LetterMain.png" class="letter__main__img">
+			<img src="resources/png/MainPage/LetterRight.png" class="letter__right__img">
 			<div class="letter__text">
 				<p><span style="color: #480000">ТРУ-КРАЙМ</span> - жанр нехудожественной литературы, подкастов и фильмов, в котором автор исследует преступление и описывает действия людей, связанных с криминальными событиями и пострадавших от них. Рассказчик делится фактами, выдвигает гипотезы о произошедшем и комментирует мотивы преступников.
 				</p>   
@@ -51,5 +64,13 @@
 			<p style="text-indent: 0;">Авторы: студенты группы О713Б Виноградов Максим и Котельникова Анастасия</p>
 		</div>
 	</div>
+
+	<script>
+		document.querySelector('.burger').addEventListener('click', function()
+		{
+			this.classList.toggle('active');
+			document.querySelector('.nav').classList.toggle('open');
+		})
+	</script>
 </body>
 </html>
