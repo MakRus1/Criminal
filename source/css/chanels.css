@@ -44,6 +44,13 @@ a
 	transition: color ease .3s;
 }
 
+.chanel__item a
+{
+	color: #720000; 
+	font-weight: 500; 
+	text-transform: uppercase;
+}
+
 .chanel__item a:hover
 {
 	color: #c43324;
@@ -237,6 +244,16 @@ a
 {
 	position: relative;
 	width: 100%;
+	height: 800px;
+	transform: translateY(200px);
+	opacity: 0;
+}
+
+.chanel__item.element-show
+{
+	transition: all 0.5s ease;
+	transform: translateY(0);
+	opacity: 1;
 }
 
 .chanel__item__note
@@ -260,8 +277,9 @@ a
 .chanel__item h1
 {
 	position: absolute;
+	width: 600px;
 	margin-top: 10%;
-	left: 43%;
+	left: 28%;
 	font-size: 40px;
 }
 
@@ -331,10 +349,16 @@ a
 	}
 
 	/* Chanels */
+	.chanel__item
+	{
+		height: 60vw;
+	}
+
 	.chanel__item h1
 	{
-		left: 43vw;
+		left: 38vw;
 		font-size: 3vw;
+		max-width: 25vw;
 	}
 
 	.chanel__item__picture
