@@ -1,21 +1,3 @@
-@keyframes slideToLeft
-{
-	0%
-	{
-		left: 30%;
-		transform: rotate(10deg);
-	}
-}
-
-@keyframes slideToRight
-{
-	0%
-	{
-		right: 30%;
-		transform: rotate(-30deg);
-	}
-}
-
 @keyframes burgerAnimation
 {
 	0%
@@ -327,9 +309,17 @@ a
 	height: auto;
 	max-width: 1200px;
 	position: absolute;
-	left: 0;
+	left: 30%;
+	opacity: 0;
 	z-index: -1;
-	animation: slideToLeft 1s ease-in;
+	transition: all 1.5s ease;
+/*	animation: slideToLeft 1s ease-in;*/
+}
+
+.letter__left__img.element-show
+{
+	left: 0;
+	opacity: 1;
 }
 
 .letter__main__img
@@ -338,6 +328,13 @@ a
 	height: auto;
 	max-width: 1200px;
 	position: absolute;
+	opacity: 0;
+	transition: all 0.8s ease;
+}
+
+.letter__main__img.element-show
+{
+	opacity: 1;
 }
 
 .letter__right__img
@@ -346,9 +343,17 @@ a
 	height: auto;
 	max-width: 1200px;
 	position: absolute;
-	right: 0;
+	right: 30%;
+	opacity: 0;
 	z-index: -1;
-	animation: slideToRight 1s ease-in;
+	transition: all 1.5s ease;
+/*	animation: slideToRight 1s ease-in;*/
+}
+
+.letter__right__img.element-show
+{
+	right: 0;
+	opacity: 1;
 }
 
 .letter__text
@@ -361,7 +366,14 @@ a
 	max-width: 800px;
 	margin: 0 auto;
 	position: relative;
+	opacity: 0;
+	transition: all 0.9s ease;
 /*	padding-top: 80px;*/
+}
+
+.letter__text.element-show
+{
+	opacity: 1;
 }
 
 
