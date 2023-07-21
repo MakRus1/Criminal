@@ -17,6 +17,11 @@ body
 	color: black;
 }
 
+*
+{
+	cursor: url("../../resources/cursor/cursor.png") 2 2, default;
+}
+
 *,
 *:before,
 *:after

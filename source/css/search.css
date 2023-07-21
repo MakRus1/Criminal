@@ -8,6 +8,11 @@ body
 	color: black;
 }
 
+*
+{
+	cursor: url("../../resources/cursor/cursor.png") 2 2, default;
+}
+
 *,
 *:before,
 *:after
@@ -154,7 +159,7 @@ a
 {
 	width: 100%;
 	height: auto;
-	margin-bottom: 300px;
+	margin-bottom: 301px;
 }
 
 .logo
@@ -234,9 +239,30 @@ a
 {
 	width: 100%;
 	max-width: 1200px;
+	height: auto;
 	margin: 0 auto;
 	background-color: #1a1a1a;
 	color: white;
+	border-radius: 15px;
+	transition: all 0.5s ease;
+}
+
+.search__item:hover
+{
+	background-color: rgba(40, 40, 40, 0.6);
+	transform: translate3d(-10px, -10px, 0);
+}
+
+.search__item a
+{
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.search__item a:hover
+{
+	transition: all 0.2s ease;
+	color: #720000;
 }
 
 
@@ -256,5 +282,20 @@ a
 	.header h1
 	{
 		font-size: 5.7vw;
+	}
+
+	/* Search */
+	.search__item h1
+	{
+		font-size: 2vw;
+	}
+	.search__item p
+	{
+		font-size: 1vw;
+		line-height: 3vw;
+	}
+	.search__item a
+	{
+		font-size: 3vw;
 	}
 }

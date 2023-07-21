@@ -12,6 +12,11 @@ body
 	background-size: 100% 100%;
 }
 
+*
+{
+	cursor: url("../../resources/cursor/cursor.png") 2 2, default;
+}
+
 *,
 *:before,
 *:after

@@ -36,15 +36,10 @@
 	</div>
 	<div class="search">
 		<div class="container">
-			<input type="text" size="40" placeholder="Введите название дела">	
+			<input type="text" size="40" placeholder="Введите название дела" id="input">	
 		</div>
-
-		<div class="container">
-			<div class="search__item">
-				<h1>Заголовок</h1>
-				<p>Описание</p>
-				<a>Ссылка</a>
-			</div>
+		<div class="container" id="output">
+			
 		</div>
 	</div>
 
@@ -55,6 +50,6 @@
 			document.querySelector('.nav').classList.toggle('open');
 		})
 	</script>
-	<script type="text/javascript" src="../js/parser/parser.js" type="module"></script>
+	<script type="text/javascript" src="../js/search.js" type="module"></script>
 </body>
 </html>
