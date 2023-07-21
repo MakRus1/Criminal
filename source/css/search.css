@@ -230,6 +230,17 @@ a
 	color: white;
 }
 
+.search__item
+{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #1a1a1a;
+	color: white;
+}
+
+
+
 @media(max-width: 1200px)
 {
 	.intro

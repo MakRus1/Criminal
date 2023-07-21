@@ -200,22 +200,24 @@ a
 .item__pic
 {
 	width: 60%;
+	margin-top: 20px;
 }
 
 .item__pic__inner
 {
 	position: absolute;
-	width: 60%;
-	max-width: 200px;
-	top: 13%;
-	left: 33%;
+	width: 80%;
+	max-width: 338px;
+	top: 9.5%;
+	left: 24.1%;
 }
 
 .item__picture__caption
 {
 	position: absolute;
+	width: 380px;
 	top: 80%;
-	left: 35%;
+	left: 21%;
 	font-family: 'Caveat', cursive;
 	font-size: 50px;
 }
@@ -262,17 +264,22 @@ a
 	}
 
 	/* Item */
+	.item__pic
+	{
+		margin-top: 2vw;
+	}
 	.item__pic__inner
 	{
-		max-width: 15vw;
-		top: 5vw;
-		left: 16.6vw;
+		max-width: 26vw;
+		top: 4vw;
+		left: 12vw;
 	}
 
 	.item__picture__caption
 	{
+		width: 30vw;
 		top: 80%;
-		left: 17vw;
+		left: 10vw;
 		font-size: 4vw;
 	}
 
