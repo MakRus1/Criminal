@@ -189,6 +189,16 @@ a
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 40px;
+
+	opacity: 0;
+	transform: translateY(150px);
+}
+
+.item.element-show
+{
+	transition: all 0.5s ease;
+	opacity: 1;
+	transform: translateY(0);
 }
 
 .item__picture
